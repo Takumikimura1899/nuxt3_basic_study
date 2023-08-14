@@ -2,7 +2,7 @@
   <div>
     <h1>Main Page</h1>
     <button @click="handleClick">Coupon Get</button>
-    <Coupon v-if="show" />
+    <LazyCoupon v-if="show" />
   </div>
 </template>
 <script setup>
