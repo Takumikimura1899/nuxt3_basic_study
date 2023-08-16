@@ -1,8 +1,14 @@
 <template>
   <div>
     <h1>Main Page</h1>
+    <div>Count:{{ count }}</div>
     <div>
-      <img src="/icon.png" alt="Nuxt3 Icon" />
+      <button @click="() => inc()">increase</button>
+      <button @click="() => dec()">decrease</button>
     </div>
   </div>
 </template>
+
+<script setup>
+const { count, inc, dec } = useCounter(100);
+</script>
